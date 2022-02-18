@@ -1,0 +1,11 @@
+Add @Component in every class that you want to make beans from
+
+ApplicationContext context = new AnnotationConfigApplicationContext(ConfigCourse.class);
+This says go to ConfigCourse.class and see where to look for bean structures
+
+@ComponentScan
+Go to this package package com.training.stereotype_annotation;
+and find the classes with @Component and create beans from those classes
+
+With this method, you can't just print a string. In that case, you should use @Bean
+annotation
