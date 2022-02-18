@@ -13,6 +13,10 @@ public class DealerApp {
 
         System.out.println("Person's name: " + p.getName());
         System.out.println("Car's make: " + c.getMake());
-        System.out.println("Person's car: " + p.getCar());
+        System.out.println("Person's car: " + p.getCar().getMake()); // -> This is NULL because they are not wired
+        /*
+        In line 16, we don't make a new car because Spring checks whether we already have a bean for car
+        if there is, then Spring connects them. If not, then Spring makes a new bean
+         */
     }
 }

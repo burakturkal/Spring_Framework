@@ -9,3 +9,18 @@ and find the classes with @Component and create beans from those classes
 
 With this method, you can't just print a string. In that case, you should use @Bean
 annotation
+
+-----
+
+Wiring : This is the approach where the relationship is implemented by directly calling
+@Bean annotated method from the other @Bean annotated method that defines the
+second bean of the relationship.
+Autowiring : This is the approach where we let Spring provide a value for a parameter
+we define for the @Bean annotated method.
+
+Check ConfigCar class to see wiring types.
+
+We won't face a lot of wiring when we use Spring Boot because it will do all the wiring etc
+
+
+-------
