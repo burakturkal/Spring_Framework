@@ -1,0 +1,7 @@
+4 Packages are used on the work environment
+
+Service       :refers to the objects implementing use cases. -> Business Logic
+Repository    :refers to the objects working directly with a database.
+Proxy         :refers to the objects whose responsibilities are to establish
+               communication with something outside the app. -> Such as sending email etc
+Model/Entity  :refers to objects that model the data the app uses. -> POJO Classes

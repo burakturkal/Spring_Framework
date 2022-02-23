@@ -1,0 +1,13 @@
+Scope of Beans:
+Singleton: This is the default
+
+Prototype: This is not default. To make it work, you should write @Scope("prototype").
+
+
+Eager Instintiation: Create all the beans in the beginning of the application. So they are
+executed even though they are not called in main method. This is the default in Spring. This
+is more popular in development.
+
+Lazy Initiation: Create all the beans only when they are called. This is not default. To
+make this, you should add @Lazy in the beginning of the class
+
